@@ -10,4 +10,11 @@ A R wrapper that can be used to pull data from the [SuperHero API](https://super
 Entering the desired superhero you can information regarding a superheros powerstats, appearances, connections, and
 much more. A Facebook profile is required to obtain a token.
 
+# Setting access token
+
+```{r access_token}
+
+Sys.setenv(SUPERHERO_TOKEN = "xxxxxxxxxxxxxxx")
+
+```
 
