@@ -1,28 +1,47 @@
-#' Title
+#' Retrieve powerstats for a superhero
 #'
-#' @param access_token
-#' @param character_id
-#'
-#' @return
+#' @param access_token Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved
+#' that way.
+#' @param character_id Required. The \href{https://superheroapi.com/ids.html}{Character ID} or name of the Superhero
+#' @return Returns a dataframe with the powerstats of the specific superhero.
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#'  get_powerstats(character_id = 69)
+#' }
+#'
+
 get_powerstats <- function(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id) {
 
-  base_url <- glue('https://superheroapi.com/api/{access_token}/{character_id}/powerstats')
+   if(is.character({{character_id}})) {
 
-  results <- GET(url = base_url)
+      load(file = here("data", "character_ids.rda"))
 
-  powerstats_df <- fromJSON(rawToChar(results$content)) %>%
-    as_tibble()
+      cnvrt_char_str <- character_ids %>%
+         filter(character == str_to_title({{character_id}})) %>%
+         select(id) %>%
+         pluck('id')
 
-  return(powerstats_df)
+      base_url <- glue('https://superheroapi.com/api/{access_token}/{cnvrt_char_str}/powerstats')
+
+      results <- GET(url = base_url)
+
+      powerstats_df <- fromJSON(rawToChar(results$content)) %>%
+         as_tibble()
+
+      return(powerstats_df)
+
+   } else{
+
+      base_url <- glue('https://superheroapi.com/api/{access_token}/{character_id}/powerstats')
+
+      results <- GET(url = base_url)
+
+      powerstats_df <- fromJSON(rawToChar(results$content)) %>%
+      as_tibble()
+
+      return(powerstats_df)
+   }
 
 }
-
-
-batman <- get_powerstats(character_id = 69)
-
-
-
-radarchart(batman)

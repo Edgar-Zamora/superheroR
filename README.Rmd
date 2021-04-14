@@ -2,9 +2,24 @@
 output: github_document
 ---
 
+```{r setup, include=FALSE}
+library(knitr)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
 # superheroR
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+
+```{r unsplash, echo=FALSE, fig.align='center', out.width="90%", fig.cap='Photo by <a href="https://unsplash.com/@waldemarbrandt67w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Waldemar Brandt</a> on <a href="https://unsplash.com/s/photos/comics?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'}
+
+include_graphics("https://images.unsplash.com/photo-1588497859490-85d1c17db96d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80")
+  
+```
+
+<br>
 
 A R wrapper that can be used to pull data from the [SuperHero API](https://superheroapi.com) by specific superhero.
 Entering the desired superhero you can information regarding a superheros powerstats, appearances, connections, and
