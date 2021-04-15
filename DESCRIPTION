@@ -13,6 +13,6 @@ Description: A R wrapper that can be used to pull data from the SuperHero API <h
 License: MIT
 Encoding: UTF-8
 LazyData: true
-URL:
-BugReports: 
+URL: https://github.com/Edgar-Zamora/superheroR
+BugReports: https://github.com/Edgar-Zamora/superheroR/issues
 RoxygenNote: 6.1.1
