@@ -1,4 +1,4 @@
-#' Retrieve powerstats for a superhero
+#'  Get powerstats for a superhero
 #'
 #' @param access_token Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved
 #' that way.
