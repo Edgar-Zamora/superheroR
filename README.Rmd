@@ -52,5 +52,5 @@ devtools::install_github("Edgar-Zamora/superheroR")
 ```
 
 
-
+# Credits
 

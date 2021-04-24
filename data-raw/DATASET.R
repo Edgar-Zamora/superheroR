@@ -20,12 +20,12 @@ character_ids <- url %>%
   rename(
     id = X1,
     character = X2
-  ) %>%
-  group_by(character) %>%
-  summarise(
-    id = min(id)
-  ) %>%
-  ungroup()
+    ) #%>%
+  # group_by(character) %>%
+  # summarise(
+  #   id = min(id)
+  #   ) %>%
+  # ungroup()
 
 # Writing data
 write_csv(character_ids, "data-raw/character_ids.csv")
