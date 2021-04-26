@@ -7,6 +7,7 @@
 #' @return Returns a dataframe with the work/occupation  of the specific superhero.
 #' @export
 #'
+#' @import magick
 #' @examples
 #' \dontrun{
 #'  get_imagek(character_id = 69)

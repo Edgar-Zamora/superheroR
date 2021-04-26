@@ -46,4 +46,6 @@ devtools::install_github("Edgar-Zamora/superheroR")
 
 # I’m Batman\! 🦇🤵🃏
 
+# Shiny 2021 App
+
 # Credits

@@ -1,10 +1,20 @@
-#' Title
+#' Get biographic information about a superhero.
 #'
-#' @param access_token
-#' @param character_id
+#' @param access_token Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved
+#' that way.
+#' @param character_id Required. Required. The \href{https://superheroapi.com/ids.html}{Character ID} or name of the Superhero
 #'
-#' @return
+#' @return Returns a dataframe with the work/occupation  of the specific superhero.
 #' @export
+#' @import here
+#' @importFrom magrittr '%>%'
+#' @importFrom purrr pluck
+#' @import dplyr
+#' @importFrom  stringr str_to_title
+#' @importFrom glue glue
+#' @import httr
+#' @importFrom janitor clean_names
+#' @import jsonlite
 #'
 #' @examples
 get_bio <- function(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id) {
@@ -42,8 +52,5 @@ get_bio <- function(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id) 
   }
 
 }
-
-
-get_bio(character_id = "Batman")
 
 
