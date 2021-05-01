@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_image.R
 \name{get_image}
 \alias{get_image}
-\title{Get superhero image}
+\title{Call that provides the image of the superhero.}
 \usage{
 get_image(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id)
 }
@@ -16,7 +16,7 @@ that way.}
 Returns a dataframe with the work/occupation  of the specific superhero.
 }
 \description{
-Get superhero image
+Call that provides the image of the superhero.
 }
 \examples{
 \dontrun{

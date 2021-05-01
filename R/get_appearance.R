@@ -1,4 +1,4 @@
-#' Call that gives the biographical stats of the superhero.
+#' Call that gets the appearance of a given superhero.
 #'
 #' @param access_token Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved
 #' that way.
@@ -7,9 +7,9 @@
 #' @return Returns a dataframe with the work/occupation  of the specific superhero.
 #' @export
 #'
-#'
 
-get_bio <- function(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id) {
+
+get_appearance <- function(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id) {
 
   if(is.character({{character_id}})) {
 
@@ -20,29 +20,25 @@ get_bio <- function(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id) 
       select(id) %>%
       pluck('id')
 
-    base_url <- glue('https://superheroapi.com/api/{access_token}/{cnvrt_char_str}/biography')
+    base_url <- glue('https://superheroapi.com/api/{access_token}/{cnvrt_char_str}/appearance')
 
     results <- GET(url = base_url)
 
-    bio_df <- fromJSON(rawToChar(results$content)) %>%
-      as_tibble() %>%
-      clean_names()
+    appearance_df <- fromJSON(rawToChar(results$content)) %>%
+      as_tibble()
 
-    return(bio_df)
+    return(appearance_df)
 
   } else{
 
-    base_url <- glue('https://superheroapi.com/api/{access_token}/{character_id}/biography')
+    base_url <- glue('https://superheroapi.com/api/{access_token}/{character_id}/appearance')
 
     results <- GET(url = base_url)
 
-    bio_df <- fromJSON(rawToChar(results$content)) %>%
-      as_tibble() %>%
-      clean_names()
+    appearance_df <- fromJSON(rawToChar(results$content)) %>%
+      as_tibble()
 
-    return(bio_df)
+    return(appearance_df)
   }
 
 }
-
-

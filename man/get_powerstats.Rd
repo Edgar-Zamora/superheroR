@@ -2,10 +2,9 @@
 % Please edit documentation in R/get_powerstats.R
 \name{get_powerstats}
 \alias{get_powerstats}
-\title{Get powerstats for a superhero}
+\title{Call that gets all the powerstats for the superhero.}
 \usage{
-get_powerstats(access_token = Sys.getenv("SUPERHERO_TOKEN"),
-  character_id)
+get_powerstats(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id)
 }
 \arguments{
 \item{access_token}{Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved
@@ -17,7 +16,7 @@ that way.}
 Returns a dataframe with the powerstats of the specific superhero.
 }
 \description{
-Get powerstats for a superhero
+Call that gets all the powerstats for the superhero.
 }
 \examples{
 \dontrun{

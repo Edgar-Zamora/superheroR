@@ -1,4 +1,4 @@
-#' Get superhero image
+#' Call that provides the image of the superhero.
 #'
 #' @param access_token Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved
 #' that way.
@@ -7,11 +7,7 @@
 #' @return Returns a dataframe with the work/occupation  of the specific superhero.
 #' @export
 #'
-#' @import magick
-#' @examples
-#' \dontrun{
-#'  get_imagek(character_id = 69)
-#' }
+#'
 
 
 get_image <- function(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id) {

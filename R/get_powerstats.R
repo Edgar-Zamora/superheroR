@@ -1,15 +1,12 @@
-#'  Get powerstats for a superhero
+#'  Call that gets all the powerstats for the superhero.
 #'
 #' @param access_token Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved
 #' that way.
 #' @param character_id Required. The \href{https://superheroapi.com/ids.html}{Character ID} or name of the Superhero
 #' @return Returns a dataframe with the powerstats of the specific superhero.
+#'
 #' @export
 #'
-#' @examples
-#' \dontrun{
-#'  get_powerstats(character_id = 69)
-#' }
 #'
 
 get_powerstats <- function(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id) {
