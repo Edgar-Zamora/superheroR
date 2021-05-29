@@ -22,44 +22,43 @@ superhero_list <- character_ids %>%
 # Getting information all superheros
 ## Powerstats
 powerstats <- superhero_list %>%
-  map_df(~get_powerstats(character_id = .x)) %>%
-  mutate(reference = "powerstat")
+  map_df(~get_powerstats(character_id = .x))
 
-## Work
+## Biography
 bio <- superhero_list %>%
-  map_df(~get_bio(character_id = .x)) %>%
-  mutate(reference = "bio")
+  map_df(~get_bio(character_id = .x))
 
 ## Appearance
 appearance <- superhero_list %>%
-  map_df(~get_appearance(character_id = .x)) %>%
-  mutate(reference = "appearance")
+  map_df(~get_appearance(character_id = .x))
 
 ## Work
 work <- superhero_list %>%
-  map_df(~get_work(character_id = .x)) %>%
-  mutate(reference = "work")
+  map_df(~get_work(character_id = .x))
 
 ## Connection
 connections <- superhero_list %>%
-  map_df(~get_connections(character_id = .x)) %>%
-  mutate(reference = "connection")
-
-## Connection
-connections <- superhero_list %>%
-  map_df(~get_connections(character_id = .x)) %>%
-  mutate(reference = "connection")
+  map_df(~get_connections(character_id = .x))
 
 ## Image
-imgage <- superhero_list %>%
-  map_df(~get_connections(character_id = .x)) %>%
-  mutate(reference = "imgage")
+image <- superhero_list %>%
+  map_df(~get_connections(character_id = .x))
+
+
+
+# Joining all the data together
+
+superhero_complete <- appearance %>%
+  left_join(bio) %>%
+  left_join(connections) %>%
+  left_join(powerstats) %>%
+  left_join(work)
 
 
 
 # Writing data
-write_csv(character_ids, "data-raw/superhero_data.csv")
-save(character_ids, file = "data/superhero_data.rda")
+write_csv(superhero_complete, "data-raw/superhero_complete_data.csv")
+save(superhero_complete, file = "data/superhero_complete_data.rda")
 
 
 
