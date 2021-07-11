@@ -8,7 +8,7 @@
 
 <div class="figure" style="text-align: center">
 
-<img src="/Users/edgar/Desktop/GitHub/superheroR/img/superhero_mags.jpg" alt="Photo by &lt;a href=&quot;https://unsplash.com/@waldemarbrandt67w?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Waldemar Brandt&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/comics?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;" width="90%" />
+<img src="https://images.unsplash.com/photo-1588497859490-85d1c17db96d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="Photo by &lt;a href=&quot;https://unsplash.com/@waldemarbrandt67w?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Waldemar Brandt&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/comics?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;" width="90%" />
 
 <p class="caption">
 
@@ -46,5 +46,6 @@ devtools::install_github("Edgar-Zamora/superheroR")
 
 # I’m Batman\! 🦇🤵🃏
 
+# Shiny 2021 App
 
 # Credits
