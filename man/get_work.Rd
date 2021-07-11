@@ -18,8 +18,3 @@ Returns a dataframe with the work/occupation  of the specific superhero.
 \description{
 Get work/occupation for superhero
 }
-\examples{
-\dontrun{
- get_work(character_id = 69)
-}
-}

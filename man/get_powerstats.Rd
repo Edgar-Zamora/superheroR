@@ -4,7 +4,8 @@
 \alias{get_powerstats}
 \title{Call that gets all the powerstats for the superhero.}
 \usage{
-get_powerstats(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id)
+get_powerstats(access_token = Sys.getenv("SUPERHERO_TOKEN"),
+  character_id)
 }
 \arguments{
 \item{access_token}{Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved
@@ -17,10 +18,4 @@ Returns a dataframe with the powerstats of the specific superhero.
 }
 \description{
 Call that gets all the powerstats for the superhero.
-}
-\examples{
-\dontrun{
- get_powerstats(character_id = 69)
-}
-
 }

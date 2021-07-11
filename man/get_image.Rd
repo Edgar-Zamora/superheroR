@@ -18,8 +18,3 @@ Returns a dataframe with the work/occupation  of the specific superhero.
 \description{
 Call that provides the image of the superhero.
 }
-\examples{
-\dontrun{
- get_imagek(character_id = 69)
-}
-}

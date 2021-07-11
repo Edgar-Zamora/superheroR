@@ -4,20 +4,18 @@
 \alias{get_appearance}
 \title{Call that gets the appearance of a given superhero.}
 \usage{
-get_appearance(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id)
+get_appearance(access_token = Sys.getenv("SUPERHERO_TOKEN"),
+  character_id)
 }
 \arguments{
 \item{access_token}{Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved
 that way.}
 
-\item{character_id}{Required. Required. The \href{https://superheroapi.com/ids.html}{Character ID} or name of the Superhero}
+\item{character_id}{Required. The Character ID or name of the Superhero}
 }
 \value{
 Returns a dataframe with the work/occupation  of the specific superhero.
 }
 \description{
 Call that gets the appearance of a given superhero.
-}
-\examples{
-
 }
