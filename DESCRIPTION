@@ -26,3 +26,6 @@ Imports:
     janitor (>= 2.1),
     purrr (>= 0.3.4),
     magick (>= 2.2)
+Suggests: 
+    testthat (>= 2.0.0)
+Config/testthat/edition: 2

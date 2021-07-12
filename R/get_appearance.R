@@ -6,8 +6,13 @@
 #'
 #' @return Returns a dataframe with the work/occupation  of the specific superhero.
 #' @export
-#' @example get_appearance('Batman')
-#'
+#' @import dplyr
+#' @importFrom stringr str_to_title
+#' @importFrom glue glue
+#' @importFrom here here
+#' @importFrom purrr pluck
+#' @import httr
+#' @importFrom jsonlite fromJSON
 #'
 #'
 
