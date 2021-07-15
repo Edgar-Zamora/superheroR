@@ -10,6 +10,7 @@ library(janitor)
 library(dplyr)
 library(purrr)
 library(here)
+library(janitor)
 library(readr)
 
 
@@ -52,7 +53,8 @@ superhero_complete <- appearance %>%
   left_join(bio) %>%
   left_join(connections) %>%
   left_join(powerstats) %>%
-  left_join(work)
+  left_join(work) %>%
+  clean_names()
 
 
 

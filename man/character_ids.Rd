@@ -4,12 +4,14 @@
 \name{character_ids}
 \alias{character_ids}
 \title{Characters associated with each id.}
-\format{A data frame with 731 rows and 2 variables:
+\format{
+A data frame with 731 rows and 2 variables:
 \describe{
   \item{id}{unique id for ech character}
   \item{character}{name of the superhero}
   ...
-}}
+}
+}
 \usage{
 character_ids
 }

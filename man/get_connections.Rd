@@ -4,8 +4,7 @@
 \alias{get_connections}
 \title{Call that lists out the connections of a superhero.}
 \usage{
-get_connections(access_token = Sys.getenv("SUPERHERO_TOKEN"),
-  character_id)
+get_connections(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id)
 }
 \arguments{
 \item{access_token}{Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved

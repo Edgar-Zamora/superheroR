@@ -12,8 +12,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # superheroR
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-
 [Edgar Zamora | Twitter: `@Edgar_Zamora_`](https://twitter.com/Edgar_Zamora_)
 
 ```{r unsplash, echo=FALSE, fig.align='center', out.width="90%", fig.cap='Photo by <a href="https://unsplash.com/@waldemarbrandt67w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Waldemar Brandt</a> on <a href="https://unsplash.com/s/photos/comics?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'}
@@ -21,6 +19,8 @@ knitr::opts_chunk$set(echo = TRUE)
 include_graphics("https://images.unsplash.com/photo-1588497859490-85d1c17db96d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80")
   
 ```
+
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 <br>
 
@@ -52,8 +52,6 @@ devtools::install_github("Edgar-Zamora/superheroR")
 
 ```
 
-
-# Shiny 2021 App
 
 # Credits
 
