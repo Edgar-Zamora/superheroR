@@ -9,7 +9,7 @@ A data frame with 3662 rows and 26 variables:
 \describe{
   \item{response}{unique id for ech character}
   \item{id}{name of the superhero}
-  \item{name}superhero name{}
+  \item{name}{superhero name}
   \item{gender}{gender of superhero}
   \item{race}{race of superhero}
   \item{height}{height in feet and cm}
@@ -21,9 +21,9 @@ A data frame with 3662 rows and 26 variables:
   \item{aliases}{superhero aliases}
   \item{place_of_birth}{birth place of superhero}
   \item{first_appearance}{first appearance of superhero}
-  \item{publisher}{publisher of comic }
-  \item{aligment}{superheor alignment (bad, good, neutral, unkown)}
-  \item{group_affilation}{superhero affliation}
+  \item{publisher}{publisher of comic}
+  \item{alignment}{superheor alignment - bad, good, neutral, unkown}
+  \item{group_affiliation}{superhero affliation}
   \item{relatives}{relatives to superhero}
   \item{intelligence}{superhero intelligence, 1-100}
   \item{strength}{superhero strength, 1-100}
@@ -32,8 +32,7 @@ A data frame with 3662 rows and 26 variables:
   \item{power}{superhero power, 1-100}
   \item{combat}{superhero combat, 1-100}
   \item{occupation}{superhero occupatoin}
-  \item{base}{superhero base(s)}
-  ...
+  \item{base}{superhero bases}
 }
 }
 \usage{

@@ -6,6 +6,7 @@
 #'
 #' @return Returns a dataframe with the work/occupation  of the specific superhero.
 #' @export
+#' @importFrom janitor clean_names
 #'
 #'
 
@@ -26,7 +27,7 @@ get_bio <- function(access_token = Sys.getenv("SUPERHERO_TOKEN"), character_id) 
 
     bio_df <- fromJSON(rawToChar(results$content)) %>%
       as_tibble() %>%
-      clean_names()
+      janitor::clean_names()
 
     return(bio_df)
 
