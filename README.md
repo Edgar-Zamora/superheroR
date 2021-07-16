@@ -41,6 +41,4 @@ Sys.setenv(SUPERHERO_TOKEN = "xxxxxxxxxxxxxxx")
 devtools::install_github("Edgar-Zamora/superheroR")
 ```
 
-# I’m Batman! 🦇🤵🃏
-
 # Credits

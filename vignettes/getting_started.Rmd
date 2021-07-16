@@ -1,0 +1,15 @@
+---
+title: "Getting Started"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+# I'm Batman! 🦇🤵🃏
+
+
+```{r batman_exmp}
+
+```

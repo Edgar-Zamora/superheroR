@@ -22,7 +22,7 @@
   }
 </script>
 
-<title>Call that provides the image of the superhero. — get_image • superheroR</title>
+<title>Characters associated with each id. — character_ids • superheroR</title>
 
 
 <!-- jquery -->
@@ -66,8 +66,8 @@
 
 
 
-<meta property="og:title" content="Call that provides the image of the superhero. — get_image" />
-<meta property="og:description" content="Call that provides the image of the superhero." />
+<meta property="og:title" content="Characters associated with each id. — character_ids" />
+<meta property="og:description" content="A dataset containing the ids associated with each superhero" />
 
 
 
@@ -161,34 +161,27 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Call that provides the image of the superhero.</h1>
-    <small class="dont-index">Source: <a href='https://github.com/Edgar-Zamora/superheroR/blob/master/R/get_image.R'><code>R/get_image.R</code></a></small>
-    <div class="hidden name"><code>get_image.Rd</code></div>
+    <h1>Characters associated with each id.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/Edgar-Zamora/superheroR/blob/master/R/character_ids.R'><code>R/character_ids.R</code></a></small>
+    <div class="hidden name"><code>character_ids.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Call that provides the image of the superhero.</p>
+    <p>A dataset containing the ids associated with each superhero</p>
     </div>
 
-    <pre class="usage"><span class='fu'>get_image</span><span class='op'>(</span>access_token <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Sys.getenv.html'>Sys.getenv</a></span><span class='op'>(</span><span class='st'>"SUPERHERO_TOKEN"</span><span class='op'>)</span>, <span class='va'>character_id</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='va'>character_ids</span></pre>
 
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>access_token</th>
-      <td><p>Required. Unique token obtained from the SuperHero API site. Token should be set to the environment and will be retrieved
-that way.</p></td>
-    </tr>
-    <tr>
-      <th>character_id</th>
-      <td><p>Required. The <a href='https://superheroapi.com/ids.html'>Character ID</a> or name of the Superhero</p></td>
-    </tr>
-    </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Returns a dataframe with the work/occupation  of the specific superhero.</p>
+    <p>A data frame with 731 rows and 2 variables:</p><dl>
+  <dt>id</dt><dd><p>unique id for ech character</p></dd>
+  <dt>character</dt><dd><p>name of the superhero</p></dd>
+  ...
+
+</dl>
+
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

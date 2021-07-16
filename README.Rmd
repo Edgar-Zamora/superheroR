@@ -45,12 +45,6 @@ devtools::install_github("Edgar-Zamora/superheroR")
 ```
 
 
-# I'm Batman! 🦇🤵🃏
-
-
-```{r batman_exmp}
-
-```
 
 
 # Credits
